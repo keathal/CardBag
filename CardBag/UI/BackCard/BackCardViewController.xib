@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BackCardViewController" customModule="CardBag" customModuleProvider="target">
+            <connections>
+                <outlet property="b_add" destination="Wf5-dz-sGn" id="EGH-HC-I9M"/>
+                <outlet property="lb_clothes" destination="AR6-tm-EVd" id="4Sg-cC-Lbc"/>
+                <outlet property="lb_percent" destination="A1c-yT-1qk" id="jbu-2N-RE9"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ExampleCard" translatesAutoresizingMaskIntoConstraints="NO" id="PvA-VC-kpJ" customClass="FrontCard">
+                    <rect key="frame" x="16" y="105" width="345" height="220"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="341" id="AJU-Me-ZPy"/>
+                        <constraint firstAttribute="height" constant="220" id="MwM-Io-6Mx"/>
+                        <constraint firstAttribute="width" constant="345" id="bwD-6K-jJj"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wf5-dz-sGn" userLabel="b_add">
+                    <rect key="frame" x="62" y="371" width="250" height="45"/>
+                    <color key="backgroundColor" red="0.0" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="DDY-5e-nbx"/>
+                        <constraint firstAttribute="width" constant="250" id="rbH-tB-M36"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                    <state key="normal" title="ОФОРМИТЬ КАРТУ">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Одежда и обувь" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AR6-tm-EVd" userLabel="lb_clothes">
+                    <rect key="frame" x="16" y="66" width="126" height="23"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.38" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="23" id="a34-T4-Oy1"/>
+                        <constraint firstAttribute="width" constant="126" id="uxf-of-0bC"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A1c-yT-1qk" userLabel="lb_percent">
+                    <rect key="frame" x="159" y="66" width="43" height="23"/>
+                    <color key="backgroundColor" red="0.0" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="23" id="9au-sL-uLK"/>
+                        <constraint firstAttribute="width" constant="43" id="VyA-jx-rVv"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Тыльная сторона" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ly-dw-AUa">
+                    <rect key="frame" x="129.5" y="335" width="115" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="0.38" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="PvA-VC-kpJ" secondAttribute="trailing" constant="14" id="Hva-hx-FOb"/>
+                <constraint firstItem="AR6-tm-EVd" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="MSh-na-9k1"/>
+                <constraint firstItem="A1c-yT-1qk" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="46" id="Qbm-HA-K4u"/>
+                <constraint firstItem="Wf5-dz-sGn" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="62" id="Xhh-Fm-iTf"/>
+                <constraint firstItem="7Ly-dw-AUa" firstAttribute="centerX" secondItem="Wf5-dz-sGn" secondAttribute="centerX" id="aeP-3S-BHX"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Wf5-dz-sGn" secondAttribute="trailing" constant="63" id="ixx-n4-Cup"/>
+                <constraint firstItem="A1c-yT-1qk" firstAttribute="leading" secondItem="AR6-tm-EVd" secondAttribute="trailing" constant="17" id="j3g-vw-Sn2"/>
+                <constraint firstItem="7Ly-dw-AUa" firstAttribute="top" secondItem="PvA-VC-kpJ" secondAttribute="bottom" constant="10" id="jw9-Yz-g0f"/>
+                <constraint firstItem="Wf5-dz-sGn" firstAttribute="top" secondItem="7Ly-dw-AUa" secondAttribute="bottom" constant="19" id="lHH-jT-zIb"/>
+                <constraint firstItem="AR6-tm-EVd" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="46" id="ssb-49-D7u"/>
+                <constraint firstItem="PvA-VC-kpJ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="zYc-aK-nwl"/>
+                <constraint firstItem="PvA-VC-kpJ" firstAttribute="top" secondItem="AR6-tm-EVd" secondAttribute="bottom" constant="16" id="zbI-Dv-x33"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="132" y="154.27286356821591"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ExampleCard" width="328" height="204"/>
+    </resources>
+</document>
